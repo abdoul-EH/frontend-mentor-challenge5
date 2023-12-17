@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+
+
+}
+
+
+.content{
+    margin-top: 100px;
+    display: flex;
+    border: 1px solid hsl(233, 47%, 7%);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: hsl(244, 38%, 16%);
+
+
+}
+
+/* .content {
+    width: 450px;
+    
+} */
+
+.content .left{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 380px;
+    
+
+}
+
+.left .title{
+    width: 370px;
+    color:hsl(0, 0%, 100%) ;
+
+}
+
+.left .text{
+    width: 340px;
+    font-size: 13px;
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.left h1 span{
+    color:  hsl(277, 64%, 61%);
+}
+
+.stat{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+    width: 310px;
+}
+
+.one h2, .two h2, .three h2{
+    margin: 0;
+    padding: 0;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.one > span , .two span , .three span{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.content .right{
+    background-image: url('images/image-header-desktop.jpg');
+    /* background-color:rgba(137, 43, 226, 0.237); */
+    background-repeat: no-repeat;
+    border-radius: 0 10px 10px 0 ;
+    width: 450px;
+    position: relative;
+}
+.overlay{
+    background-color:  hsla(277, 79%, 52%, 0.605);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.attribution { font-size: 11px; text-align: center;color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 800px) {
+
+    .content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 50px;
+    }
+
+
+    .right{
+        height: 450px;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .left{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        text-align: center;
+    }
+
+    .stat{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content{
+        
+        width: 100%;
+        margin: 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+  }
